@@ -14,15 +14,6 @@
     "/redis.conf"
   ],
   "dependencies": {
-    "@rmw/config": "^0.0.18",
-    "@rmw/dir": "^0.0.2",
-    "@rmw/thisfile": "^0.0.2",
-    "async-exit-hook": "^2.0.1",
-    "ioredis": "^4.19.4",
-    "lodash": "^4.17.20",
-    "pm2": "^4.5.1",
-    "tenjin": "^0.1.1",
-    "urlsafe-base64": "^1.0.0"
   },
   "devDependencies": {
     "@rmw/md-include": "^0.4.5",
