@@ -1,6 +1,6 @@
 {
   "name": "@rmw/redis",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "repository": "https://github.com/rmw-lib/redis",
   "author": "i@rmw.link",
   "license": "MulanPSL-2.0",
