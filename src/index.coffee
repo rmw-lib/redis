@@ -5,7 +5,7 @@ import Redis from 'ioredis'
 
 do =>
   if process.env.NODE_ENV == "development"
-    import('./dev.coffee')
+    import('./dev')
 
 export default redis = new Redis(config)
 
