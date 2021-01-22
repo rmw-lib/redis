@@ -16,7 +16,8 @@ Redis::sendCommand = (command)->
         chalk.blueBright command.args.join(" ")
       ]
       cost = (new Date() - begin)
-      t.push chalk.gray((cost / 1000) + " s")
+      if cost > 100
+        t.push chalk.red((cost / 1000) + "s")
       process.stdout.write t.join(" ")+"\n"
   try
       r = sendCommand.apply(@, arguments)
