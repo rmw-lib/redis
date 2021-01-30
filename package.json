@@ -14,7 +14,7 @@
     "/redis.conf"
   ],
   "dependencies": {
-    "@rmw/config": "^0.0.20",
+    "@rmw/config": "^0.0.21",
     "ioredis": "^4.19.4",
     "urlsafe-base64": "^1.0.0"
   },
