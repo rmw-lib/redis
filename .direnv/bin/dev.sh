@@ -2,9 +2,9 @@
 
 set -e
 DIR=$( dirname $(realpath "$0") )
-cd $DIR/../..
+source $DIR/pid.sh
 
-npx coffee -m --compile --output lib src/
-rsync -av --include='*/' --include='*.js' --include='*.mjs' --exclude=* src/ lib/
-.direnv/bin/coffee ${!#}
+cd $DIR/../..
+npm run prepare
+NODE_ENV=development exec .direnv/bin/coffee ${!#}
 
